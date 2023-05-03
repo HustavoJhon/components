@@ -9,16 +9,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor:
-            Color.fromARGB(255, 27, 32, 31), // Aquí se cambia el color de fondo
-        appBar: AppBar(
-          title: Text('Componentes'),
-        ),
-        body: HomePageTemp(),
-      ),
-    );
+        title: 'Material App',
+        debugShowCheckedModeBanner: false,
+        home: HomePageTemp());
   }
 }
