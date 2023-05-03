@@ -1,3 +1,4 @@
+import 'package:components/src/pages/home_temp.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -11,12 +12,12 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor:
+            Color.fromARGB(255, 27, 32, 31), // Aquí se cambia el color de fondo
         appBar: AppBar(
-          title: const Text('Componentes'),
+          title: Text('Componentes'),
         ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
+        body: HomePageTemp(),
       ),
     );
   }
